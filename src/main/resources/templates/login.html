@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3"> 
+<head>
+    <meta charset="UTF-8">
+    <title>登录</title>
+</head>
+<body>
+<form th:action="@{/login}" method="post">
+    <input type="text" name="username" placeholder="UserName"/>
+    <input type="password" name="password" placeholder="PassWord"/>
+    <input type="checkbox" name="rememberMe"/>
+    <input type="submit" value="提交"/>
+</form>
+</body>
+</html>
